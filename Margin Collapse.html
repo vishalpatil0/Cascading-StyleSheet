@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            background-color: red;
+            height: 40px;
+            margin: 30px 0px;
+        }
+        .box2{
+            background-color: blue;
+            margin: 30px 0px;
+        }
+        /* 
+        when margin of two neighbour element overlapped then greater margin is takend.
+        means if one element wants 30px and other elements wants 30px then the distance between two different element is 30 px . */
+    </style>
+</head>
+<body>
+    <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint dolorum aliquid neque ipsa molestias rerum, impedit est fugit, iste nisi deleniti illum error magni quasi natus commodi corrupti deserunt expedita distinctio odit, quibusdam quos?    </div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos ipsa veniam quaerat recusandae nobis. Possimus, quibusdam eligendi! Perspiciatis aspernatur impedit ipsam vitae omnis magnam quod hic. Dolore officia temporibus eum tenetur molestias eaque?</div>
+</body>
+</html>
