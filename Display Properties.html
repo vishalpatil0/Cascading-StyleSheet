@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        /* 
+        Display Inline : take only space as required.
+                         setting top-margin top-padding not allowed.
+                         setting height width not allowed.
+        Display Block : take whole width.
+        Display Inline Block: inline but width height margin padding can be set.
+
+        Display None : remove from document flow means other object can takes it space.
+
+        visiblity None: only make it invisible but space is not freed.
+
+
+         */
+        *{
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            height: 30px;
+            width: 200px;
+            background-color: orangered;
+            border-style: solid;
+            /* display: inline;    if element is inline then you can't set the width. If you have inserted some content in there then only it take space otherwise don't. */
+            text-align: left;  
+            text-decoration: underline wavy;      
+        }
+        .box2{
+            height: 30px;
+            width: 200px;
+            border-style:none solid;
+            background-color: white;
+            /* display: inline; */
+            text-align: center;  
+            text-transform: lowercase;
+        }
+        .box3{
+            height: 30px;
+            width: 200px;
+            border-style: solid;
+            background-color: green;
+            /* display: inline;     */
+            text-align: right;  
+            text-transform: uppercase;         
+        }
+        .box4{
+            border: 3px dashed rgb(2, 15, 44);
+            background-color: purple;
+            color: yellow;
+            line-height: 50px;
+        }   
+    </style>
+</head>
+<body>
+    <div class="box1">Orange Color</div>
+    <div class="box2">White Color</div>
+    <div class="box3">Green Color</div>
+    <br> <br>
+    <div class="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores voluptatem qui at beatae inventore dolor aut saepe tempora maxime a facilis exercitationem fugiat nobis odio, error eos atque sit!
+    </div>
+</body>
+</html>
